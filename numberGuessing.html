@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Number Guessing</title>
+        <style>
+            h1{
+                text-align: center;
+            }
+            .layout{
+                border: 0.1rem solid;
+                border-radius: 2rem;
+                border-color: black;
+                padding: 5rem;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Nuber Guessing Game</h1>
+        <Div class="layout">
+        <p>We have selected a random number between 1 and 100. We'll tell you if your guess was too low or too high or correct</p>
+        <form id="form1" onsubmit="confirmMessage()">
+            <label for="guess">Enter a guess:
+            <input name="guess" id="guess" type="number" placeholder="type here..."/>
+            </label>
+            <input type="submit" onclick="addNumbers()"/>
+        </form>
+        <p id="write">Previous :</p>
+        <hr/>
+        <p id="result"></p>
+
+    </Div>
+    <script src="index.js"></script>
+    </body>
+</html>
